@@ -1,9 +1,11 @@
-# setting
+# list
 
-## 라이브러리
+https://eehd80.github.io/-setting/html-name/!list.html
 
-- 스와이퍼
-- 라인어썸
-- 구글폰트
+## main
 
-![Alt text](image.png)
+https://eehd80.github.io/-setting/html-name/
+
+## bbs-list
+
+## bbs-view
