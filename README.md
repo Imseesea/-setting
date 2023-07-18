@@ -1,10 +1,10 @@
 # list
 
-/html-name/!list.html
+https://eehd80.github.io/-setting/!list.html
 
 ## main
 
-/html-name/
+https://eehd80.github.io/-setting/
 
 ## bbs-list
 
