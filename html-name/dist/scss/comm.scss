@@ -4,6 +4,12 @@
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
+// 공통
+.container {
+  padding: 0 4%;
+}
+
+// header
 #header {
   border-bottom: 1px solid #000;
   .inner {
@@ -14,14 +20,20 @@
   }
   .lst-util {
     display: flex;
+    .btn-g {
+      width: 40px;
+      height: 70px;
+      &::before {
+        font-size: 20px;
+        font-family: "Font Awesome 6 Free";
+      }
+    }
     .btn-search::before {
       content: "\f002";
-      font-family: "Font Awesome 6 Free";
       font-weight: 900;
     }
     .btn-burger::before {
       content: "\f007";
-      font-family: "Font Awesome 6 Free";
       font-weight: 400;
     }
   }
