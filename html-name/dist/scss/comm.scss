@@ -5,9 +5,24 @@
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
 #header {
+  border-bottom: 1px solid #000;
   .inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 70px;
+  }
+  .lst-util {
+    display: flex;
+    .btn-search::before {
+      content: "\f002";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+    }
+    .btn-burger::before {
+      content: "\f007";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 400;
+    }
   }
 }
