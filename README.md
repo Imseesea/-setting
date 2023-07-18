@@ -164,6 +164,22 @@ body {
 <div class="material-icons">upload</div>
 ```
 
+## font awesome
+
+[사용 빈도가 높은 아이콘](https://fontawesome.com/search)을 유료 버전과 무료 버전이 있습니다.
+
+[Getting started for web](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)
+
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+```
+
+다음과 같이 사용할 수 있습니다.
+
+```html
+<i class="fa-solid fa-house"></i>
+```
+
 ## GSAP & ScrollToPlugin
 
 [GSAP(The GreenSock Animation Platform)](https://greensock.com/gsap/)은 자바스크립트로 제어하는 타임라인 기반의 애니메이션 라이브러리입니다.
