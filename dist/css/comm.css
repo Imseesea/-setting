@@ -24,35 +24,6 @@
   font-weight: 700;
   src: url(../fonts/Poppins-Bold.woff) format("woff");
 }
-@font-face {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"), url(https://example.com/MaterialIcons-Regular.woff) format("woff"), url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
-}
-.material-icons {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: "liga";
-}
-
 /* reset */
 body,
 div,
@@ -330,6 +301,9 @@ legend {
   justify-content: space-between;
   height: 70px;
 }
+#header .head__right {
+  display: flex;
+}
 #header .lst-util {
   display: flex;
 }
@@ -340,15 +314,10 @@ legend {
   width: 40px;
   height: 70px;
 }
+#header .lst-util .btn-g .material-icons-outlined {
+  font-size: 36px;
+}
 #header .lst-util .btn-g::before {
   font-size: 20px;
   font-family: "Font Awesome 6 Free";
-}
-#header .lst-util .btn-search::before {
-  content: "\f002";
-  font-weight: 900;
-}
-#header .lst-util .btn-my::before {
-  content: "\f007";
-  font-weight: 400;
 }/*# sourceMappingURL=comm.css.map */
