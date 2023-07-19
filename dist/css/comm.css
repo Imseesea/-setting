@@ -307,17 +307,31 @@ legend {
 #header .lst-util {
   display: flex;
 }
-#header .lst-util .btn-g {
+#header .lst-util li {
+  display: flex;
+}
+#header .lst-util .btn-g,
+#header .lst-util a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 70px;
 }
-#header .lst-util .btn-g .material-icons-outlined {
-  font-size: 36px;
+#header .lst-util .btn-g .material-icons-outlined,
+#header .lst-util a .material-icons-outlined {
+  font-size: 26px;
 }
-#header .lst-util .btn-g::before {
+#header .lst-util .btn-g::before,
+#header .lst-util a::before {
   font-size: 20px;
   font-family: "Font Awesome 6 Free";
+}
+
+.gnb-wrap a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 70px;
 }/*# sourceMappingURL=comm.css.map */
