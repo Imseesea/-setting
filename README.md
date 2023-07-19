@@ -166,9 +166,16 @@ body {
 [Getting started for web](https://material.io/develop/web/getting-started)
 
 ```html
+<!-- icons -->
 <link
   href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round"
   rel="stylesheet"
+/>
+
+<!-- symbols -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@NaN,0,0,0"
 />
 ```
 
