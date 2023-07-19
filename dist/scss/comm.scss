@@ -21,6 +21,9 @@
   .lst-util {
     display: flex;
     .btn-g {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 40px;
       height: 70px;
       &::before {
@@ -32,7 +35,7 @@
       content: "\f002";
       font-weight: 900;
     }
-    .btn-burger::before {
+    .btn-my::before {
       content: "\f007";
       font-weight: 400;
     }
