@@ -1,17 +1,20 @@
 @charset "UFT-8";
-@import "mixin", "variables", "fonts", "reset", "main", "contents";
+@import "variables", "mixin", "fonts", "reset", "main", "contents";
 
 // comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
 // 공통
 .container {
-  padding: 0 4%;
+  padding: 0 $bothMargin;
+}
+.bg-gray {
+  background: $gray-e;
 }
 
 // header
 #header {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $b;
   .inner {
     display: flex;
     align-items: center;
@@ -72,4 +75,48 @@
   #gnb {
     display: none;
   }
+}
+
+// main
+.section-g {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .section-tit {
+    font-size: 20px;
+    color: $b;
+  }
+  .section-contents {
+    margin-top: 20px;
+  }
+}
+.section-news {
+  .a {
+  }
+  .b {
+  }
+}
+.section-shopping {
+  .lst-shopping {
+    display: flex;
+    li {
+      width: 200px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .b {
+  }
+}
+.section-feed {
+  .a {
+  }
+  .b {
+  }
+}
+
+// footer
+#footer {
+  margin-bottom: 200px;
+  border-top: 10px solid $b;
 }

@@ -292,6 +292,10 @@ legend {
   padding: 0 4%;
 }
 
+.bg-gray {
+  background: red;
+}
+
 #header {
   border-bottom: 1px solid #000;
 }
@@ -344,4 +348,30 @@ legend {
 }
 .gnb-wrap #gnb {
   display: none;
+}
+
+.section-g {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.section-g .section-tit {
+  font-size: 20px;
+  color: #000;
+}
+.section-g .section-contents {
+  margin-top: 20px;
+}
+
+.section-shopping .lst-shopping {
+  display: flex;
+}
+.section-shopping .lst-shopping li {
+  width: 200px;
+}
+.section-shopping .lst-shopping li img {
+  width: 100%;
+}
+#footer {
+  margin-bottom: 200px;
+  border-top: 10px solid #000;
 }/*# sourceMappingURL=comm.css.map */
