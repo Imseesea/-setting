@@ -293,7 +293,7 @@ legend {
 }
 
 .bg-gray {
-  background: red;
+  background: #eee;
 }
 
 #header {
@@ -371,10 +371,23 @@ legend {
   width: calc(50% - 10px);
   margin-bottom: 20px;
 }
-.section-shopping .lst-shopping li .img-shopping {
+.section-shopping .lst-shopping li .thumb-shopping {
+  position: relative;
   overflow: hidden;
   width: 100%;
   height: 200px;
+  border-radius: 4px;
+}
+.section-shopping .lst-shopping li .thumb-shopping::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, 0.03);
 }
 .section-shopping .lst-shopping li img {
   width: 100%;
@@ -383,6 +396,13 @@ legend {
      object-fit: cover;
   -o-object-position: 0 50%;
      object-position: 0 50%;
+  transition: transform 0.3s;
+}
+.section-shopping .lst-shopping a:hover img {
+  transform: scale(1.5);
+}
+.section-shopping .lst-shopping .txt-shopping {
+  margin-top: 10px;
 }
 .section-shopping .lst-shopping .txt-shopping .txt-shopping__tit {
   display: block;

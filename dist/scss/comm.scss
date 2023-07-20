@@ -103,19 +103,41 @@
     li {
       width: calc(50% - $spacingList / 2);
       margin-bottom: $spacingList;
-      .img-shopping {
+      .thumb-shopping {
+        position: relative;
         overflow: hidden;
         width: 100%;
         height: 200px;
+        border-radius: 4px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: inherit;
+          border: 1px solid rgba($b, 0.06);
+          background: rgba($b, 0.03);
+        }
       }
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: 0 50%;
+        transition: transform 0.3s;
+      }
+    }
+    a {
+      &:hover {
+        img {
+          transform: scale(1.5);
+        }
       }
     }
     .txt-shopping {
+      margin-top: 10px;
       .txt-shopping__tit {
         display: block;
         margin-bottom: 5px;
