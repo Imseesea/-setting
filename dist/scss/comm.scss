@@ -98,14 +98,34 @@
 .section-shopping {
   .lst-shopping {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     li {
-      width: 200px;
+      width: calc(50% - $spacingList / 2);
+      margin-bottom: $spacingList;
+      .img-shopping {
+        overflow: hidden;
+        width: 100%;
+        height: 200px;
+      }
       img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 50%;
       }
     }
-  }
-  .b {
+    .txt-shopping {
+      .txt-shopping__tit {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: $titDefult;
+      }
+      .txt-shopping__desc {
+        font-size: 12px;
+      }
+    }
   }
 }
 .section-feed {
