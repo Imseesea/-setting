@@ -303,31 +303,31 @@ legend {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
 }
-#header .head__right {
+#header .header__right {
   display: flex;
 }
-#header .lst-util {
+
+.util__list {
   display: flex;
 }
-#header .lst-util li {
+.util__list li {
   display: flex;
 }
-#header .lst-util .btn-g,
-#header .lst-util a {
+.util__list .btn-g,
+.util__list a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 70px;
 }
-#header .lst-util .btn-g .material-icons-outlined,
-#header .lst-util a .material-icons-outlined {
+.util__list .btn-g .material-icons-outlined,
+.util__list a .material-icons-outlined {
   font-size: 26px;
 }
-#header .lst-util .btn-g::before,
-#header .lst-util a::before {
+.util__list .btn-g::before,
+.util__list a::before {
   font-size: 20px;
   font-family: "Font Awesome 6 Free";
 }
@@ -340,11 +340,25 @@ legend {
   height: 0;
   opacity: 0;
 }
+.gnb-wrap .input-burger:checked + label .bar {
+  background: blue;
+}
+.gnb-wrap .label-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40px;
+  height: 70px;
+}
 .gnb-wrap .label-burger .bar {
   display: block;
   width: 26px;
   height: 2px;
   background: red;
+}
+.gnb-wrap .label-burger span:nth-child(3) {
+  margin: 5px 0;
 }
 .gnb-wrap #gnb {
   display: none;
@@ -375,8 +389,27 @@ legend {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 200px;
   border-radius: 4px;
+}
+.section-shopping .lst-shopping li .thumb-shopping::before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-top: 100%;
+}
+.section-shopping .lst-shopping li .thumb-shopping img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 50%;
+     object-position: 0 50%;
+  transition: transform 0.3s;
 }
 .section-shopping .lst-shopping li .thumb-shopping::after {
   content: "";
@@ -389,17 +422,8 @@ legend {
   border: 1px solid rgba(0, 0, 0, 0.06);
   background: rgba(0, 0, 0, 0.03);
 }
-.section-shopping .lst-shopping li img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 50%;
-     object-position: 0 50%;
-  transition: transform 0.3s;
-}
 .section-shopping .lst-shopping a:hover img {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 .section-shopping .lst-shopping .txt-shopping {
   margin-top: 10px;

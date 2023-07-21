@@ -18,6 +18,34 @@ https://eehd80.github.io/-setting/
 [list](https://eehd80.github.io/-setting/!list.html) <br/>
 [DEMO](https://eehd80.github.io/-setting/)
 
+## Naming Case (BEM)
+
+### kebab-case(케밥 표기법)
+
+- kebab-case, header-container, btn-list, menu-list ...
+- (하이픈)으로 단어를 연결하는 표기법
+- HTML 태그의 class 속성으로 흔히 사용됨
+
+### camelCase(카멜 표기법)
+
+- camelCase, typeName, lightBox, darkBox ...
+- 기본적으로 변수명을 모두 소문자로 씀
+- 여러 단어가 이어지는 경우 첫 단어를 제외하고 각 단어의 첫글자만 대문자로 지정
+
+### PascalCase(파스칼 표기법)
+
+- PascalCase, TypeName, LightBox, DarkBox ...
+- 카멜 표기법과 같으나, 파스칼 표기법은 첫번째 글자도 대문자로 선언
+
+### Snake_case(뱀 표기범)
+
+- snake_case, background_color, light_box, main_container ...
+- 단어를 \_(언더바)로 구분하는 표기법
+
+## BEM
+
+BEM이란? CSS 제작 방법론으로, 일종의 네이밍 컨벤션이라고 볼 수 있다. 개발, 디버깅, 유지보수를 위해 가능한 명확하게 네이밍하는 것이 그들의 목표이다.
+
 ## 문자 인코딩(Character Encoding) 설정
 
 문자가 인코딩되는 방식을 설정합니다.
